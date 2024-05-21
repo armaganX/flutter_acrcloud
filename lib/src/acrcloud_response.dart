@@ -54,6 +54,10 @@ class ACRCloudResponseMusicItem {
 
   final List<ACRCloudResponseArtist> artists;
 
+  // @JsonKey(name: 'external_metadata')
+  @JsonKey(name: 'id')
+  final String id;
+
   @JsonKey(name: 'acrid')
   final String acrId;
 
@@ -77,6 +81,7 @@ class ACRCloudResponseMusicItem {
       this.label,
       this.album,
       this.artists,
+      this.id,
       this.acrId,
       this.resultFrom,
       this.title,
