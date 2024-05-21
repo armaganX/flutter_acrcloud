@@ -47,6 +47,7 @@ ACRCloudResponseMusicItem _$ACRCloudResponseMusicItemFromJson(
           .map(
               (e) => ACRCloudResponseArtist.fromJson(e as Map<String, dynamic>))
           .toList(),
+      json['external_metadata']['deezer']['track']['id'] as String,
       json['acrid'] as String,
       json['result_from'] as int,
       json['title'] as String,
